@@ -1,0 +1,82 @@
+﻿<Page x:Class="NaviEaze.SplashPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:NaviEaze"
+      mc:Ignorable="d" 
+      Title="SplashPage" Background="Black">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.5*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="0.2*"/>
+            </Grid.ColumnDefinitions>
+
+            <Image Grid.Column="1"  Source="/assets/LogoText.png" HorizontalAlignment="Right" VerticalAlignment="Center" Panel.ZIndex="2"/>
+        </Grid>
+
+        <Grid Grid.RowSpan="2">
+            <Rectangle RadiusX="48" RadiusY="48" Fill="#BF423A9C"/>
+            <Path Data="M960 270C960 419.117 745.899 540 481.793 540C1259.88 -45.9999 -175.244 706.5 3.58594 270C3.58594 120.883 217.686 0 481.793 0C-234.023 360.5 -168.27 852 960 270Z" Fill="#FFC588DB"/>
+        </Grid>
+
+        <Grid Grid.Row="1">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Image x:Name="languageImage" Grid.Column="0" HorizontalAlignment="Center" Height="122" VerticalAlignment="Center" Width="122" Source="Assets/english.png" MouseUp="LanguageSettingToggle" />
+            <Ellipse x:Uid="0" Grid.Column="1" HorizontalAlignment="Center" Height="122" VerticalAlignment="Center" Width="122" Fill="#FFC5C5E8" MouseUp="SplashButtonPressed" MouseDown="Ellipse_MouseDown">
+                <Ellipse.Style>
+                    <Style TargetType="Ellipse">
+                        <Setter Property="StrokeThickness" Value="0"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Stroke" Value="WhiteSmoke"/>
+                                <Setter Property="StrokeThickness" Value="10"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Ellipse.Style>
+            </Ellipse>
+
+            <Ellipse x:Uid="1" Grid.Column="2" HorizontalAlignment="Center" Height="122" VerticalAlignment="Center" Width="122" Fill="#FFADD6FF" MouseUp="SplashButtonPressed" MouseDown="Ellipse_MouseDown">
+                <Ellipse.Style>
+                    <Style TargetType="Ellipse">
+                        <Setter Property="StrokeThickness" Value="0"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Stroke" Value="WhiteSmoke"/>
+                                <Setter Property="StrokeThickness" Value="10"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Ellipse.Style>
+            </Ellipse>
+
+            <Ellipse x:Uid="2" Grid.Column="3" HorizontalAlignment="Center" Height="122" VerticalAlignment="Center" Width="122" Fill="#AACEA1" MouseUp="SplashButtonPressed" MouseDown="Ellipse_MouseDown">
+                <Ellipse.Style>
+                    <Style TargetType="Ellipse">
+                        <Setter Property="StrokeThickness" Value="0"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Stroke" Value="WhiteSmoke"/>
+                                <Setter Property="StrokeThickness" Value="10"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Ellipse.Style>
+            </Ellipse>
+        </Grid>
+    </Grid>
+</Page>

@@ -1,0 +1,16 @@
+﻿<Window x:Class="NaviEaze.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NaviEaze"
+        mc:Ignorable="d"
+        Height="578" Width="974"
+        WindowStartupLocation="CenterScreen"
+        Title="NaviEaze">
+    <Grid>
+        <Frame Name="MainFrame" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Visibility="Hidden"/>
+        <Frame Name="MainFrameSv" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Visibility="Hidden"/>
+        <Frame Name="SplashFrame" Height="540" Width="960"/>
+    </Grid>
+</Window>
